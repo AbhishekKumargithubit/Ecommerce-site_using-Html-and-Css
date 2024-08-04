@@ -1,0 +1,421 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#header {
+    
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+    background-color: aliceblue;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgb(0, 0, 0, 0.06);
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-list-nav ul {
+    display: flex;
+
+}
+
+.header-list-nav ul li {
+    list-style-type: none;
+    padding: 0 20px;
+    position: relative;
+
+}
+
+.header-list-nav ul a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+
+.header-list-nav ul a:hover,
+.header-list-nav ul a.active {
+    color: #088178;
+    content: " ";
+}
+
+.logo img {
+    height: 50px;
+    width: 60px;
+}
+
+.header-list-icon a {
+    color: #1a1a1a;
+    padding-left: 20px;
+    transition: 0.3s ease;
+}
+
+.header-list-icon a:hover {
+    color: #088178;
+
+}
+
+.header-list-nav ul a:hover::after,
+.header-list-nav ul a.action::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#hero {
+    background-image: url(https://img.freepik.com/free-photo/portrait-young-stylish-girl-model-casual-summer-clothes-brown-hat-with-natural-makeup-isolated_158538-8585.jpg?t=st=1719845121~exp=1719848721~hmac=4aadf1175e29e242b8fad66683488375e5301151ede578e9877a3a7cbd598a89&w=826);
+   
+    height: 200vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: centre;
+    padding: 0 80px;
+justify-content: centre;
+margin-top: 200px;
+
+
+box-shadow: 2px 2px rgb(231, 231, 231);
+
+}
+
+#hero img{
+    
+    height: auto;
+    width: 100%;
+    border: 1px solid black;   
+    
+}
+
+
+#hero h4{
+    padding-bottom: 15px;
+    font-size: 40px;
+    color:#000;
+}
+
+#hero h2{
+    
+    font-size: 70px;
+}
+
+#hero h1{
+    color: #088178;
+    font-size: 70px;
+}
+
+#hero button{
+    background-color: rgb(215, 202, 179);
+    width: 260px;
+    height: 60px;
+    border: 2px;
+    border-radius: 50px;
+    margin-top: 10px;
+    
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178;
+    padding: 14px 65px 14px 65px;
+
+}
+
+#features{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#features .f-box{
+    width: 100%;
+    height: 200px;
+    text-align: center;
+    padding: 25px 25px;
+    box-shadow:450px 450px 450px rgba(0, 0, 0, 0.01) ;
+    border: 1px solid #bdc6be;
+    margin: 15px 30px;
+    transition:box-shadow 0.3s;
+    border-radius: 1px;
+    justify-content: space-between;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+#features .f-box:hover{
+    box-shadow:0px 10px 54px rgba(0,0,0,0.06)
+}
+ #features .f-box img{
+    width: 100%;
+    height: 100px;
+   
+    
+   
+ }
+ #features .f-box h6{
+    display:inline-block
+    padding 12px 8px 6px 8px;
+    line-height:1;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+ }
+ .product-collection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 60px;
+ }
+
+ .product-section h1,
+ .product-section p{
+    text-align: center;
+    margin: 20px;
+ }
+
+ .product-section .product-cart{
+    width:300px;
+    border: 1px solid #ebebeb;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-radius: 25px;
+    position: relative;
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.02);
+    transition: box-shadow 0.2s;
+ }
+
+ .product-section .product-cart{
+    box-shadow: 20px 20px 30px rgb(0, 0, 0, 0.06);
+ }
+ .product-section .product-cart img{
+    width: 100%;
+    height: 250px;
+    border-radius: 25px;
+
+ }
+ .product-section .product-cart span{
+    color: #969696;
+    font-weight: 500;
+    line-height: 30px;
+ }
+ .product-section .product-cart h4{
+    font-size: 18px;
+    color: rgb(50, 46, 46)
+ }
+
+ .product-section .product-cart .stars{
+    color:#e6ae2c;
+    padding:6px 0;
+ }
+ .product-section .product-cart .price{
+    color:#088178;
+    padding:4px 0;
+ }
+ .product-section .product-cart .buy-icon{
+    color: #088178;
+    background-color: #c7e9e75e;
+    padding: 15px;
+    border-radius: 50px;
+    position:absolute;
+    right: 10px;
+    bottom: 10px;
+ }
+
+#off-banner{
+    
+   background-image: url(https://img.freepik.com/free-photo/shopping-concept-close-up-portrait-young-beautiful-attractive-redhair-girl-smiling-looking-camera_1258-118763.jpg?t=st=1720009074~exp=1720012674~hmac=57c48cdfc1ca3051a0c96e2c4236c6b79c6565f82fcc2750a8a5b67a895f77e7&w=1060);
+    background-size: cover;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex-direction: column;
+}
+#off-banner h4{
+    color: #eaebf0;
+    
+}
+#off-banner h2{
+    color: #eaebf0;
+    padding: 20px 0;
+}
+button .normal{
+    font-size: 14px;
+    font-weight: 600px;
+    padding: 15px 30px;
+    color: #000;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #fff;
+    transition:0.2s
+}
+
+#banners{
+    margin: 20px 60px;
+}
+
+#banners h2,h4,span{
+    color:rgb(248, 248,248)
+}
+
+#banners .big-banners{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banners .big-banners div{
+    min-width: 500px;
+    margin: 15px;
+   
+    height: 300px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: center;
+padding: 20px;
+background-size:cover ;
+backdrop-filter: blur(8%);
+}
+
+#banners .big-banners-1{
+    background-image: url(https://img.freepik.com/free-photo/black-friday-assortment-with-shopping-carts_23-2148666972.jpg?t=st=1720177695~exp=1720181295~hmac=17f08e7be4a02cf4a509f5488fe23a3cce35f08c2bf0d0a27b835ceb6a9f7923&w=900);
+
+}
+
+#banners .big-banners-2{
+    background-image: url(https://img.freepik.com/free-photo/hand-holding-sale-sign_23-2147960647.jpg?t=st=1720181466~exp=1720185066~hmac=d37bd1d4017436ccb8cf3780ffb8b20ff40e27d6907ffc2373d626d6ab1f0128&w=740);
+
+}
+
+#banners .small-banner-1{
+    background-image: url(https://img.freepik.com/free-photo/girl-suggesting-take-her-heart-smiling-broadly-friendly-extending-arms-towards-camera-proposing-help_1258-142939.jpg?t=st=1720179722~exp=1720183322~hmac=62d17ca5c8e06f60a18bbd88f094b8058f9d015d1c2afeb99924e64d842ad3c1&w=1060);
+
+}
+#banners .small-banner-2{
+    background-image: url(https://img.freepik.com/free-photo/sports-girls-training-summer-park_1157-37284.jpg?t=st=1720179828~exp=1720183428~hmac=85792a9ad54a3a635189eb364789f7c253a2eb00952a1310bfd81e4ccfcc292e&w=900);
+
+}
+
+#banners .small-banner-3{
+    background-image: url(https://img.freepik.com/free-photo/shirt-mockup-concept-with-plain-clothing_23-2149448729.jpg?t=st=1720181758~exp=1720185358~hmac=802888acd87b07f9fb9dbb261a2e84027c58516d3ecc72ca70523e07e921c442&w=900);
+
+}
+
+#banners .big-banners button{
+    margin-top:20px;
+    padding:12px 20px;
+    font-size:16px;
+    font-weight:500;
+   
+    background-color:transparent;
+    border:1px solid rgb(248, 248, 248);
+    cursor:pointer;
+    transition:0.3s ease;
+    color:#fff
+    
+}
+
+#banners .big-banners div:hover button{
+    background-color:#088178;
+    border:1px solid #088178;
+
+}
+
+#banners .small-banners{
+    display:flex ;
+    align-items:centre;
+    justify-content:centere;
+    
+}
+
+#banners .small-banners div{
+
+
+min-width: 450px;
+height:200px;
+margin: 15px;
+display:flex;
+flex-direction:column;
+align-items:flex-start;
+justify-content:centre;
+padding:25px;
+background-size:cover;
+}
+
+#banners .small-banners h2{
+    font-size:25px;
+
+}
+#banners .small-banners h5{
+    color:#fff;
+}
+
+#footer{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    padding: 75px;
+    background-color:#ececec;
+
+}
+
+#footer p, #footer a{
+    text-decoration:none;
+    color:rgb(109,109,109);
+
+}
+
+#footer a:hover{
+    color:#088179;
+}
+
+#footer about a{
+    display:block;
+    padding: 8px 0;
+
+}
+
+#footer .myaccount a{
+    display:block;
+    padding:8px 0;
+
+}
+
+#footer .download img{
+    width:150px;
+    height: 40px;
+
+    
+    
+
+}
+
+#footer .contact img{
+    width:200px;
+    height:200px
+
+}
+
